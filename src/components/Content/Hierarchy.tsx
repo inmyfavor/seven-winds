@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import * as api from '../../api/api';
 import './Hierarchy.style.scss';
 import Directory from './Directory';
 
 export default function Hierarchy() {
+    useEffect(()=>{
+        api.getTreeRows()
+    })
     return (
         <div className='hierarchy'>
            <Directory name='b' level={0} hasChildren/>
