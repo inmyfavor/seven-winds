@@ -1,7 +1,7 @@
 import React from 'react';
 import './Content.style.scss';
 import Hierarchy from './Hierarchy';
-import Devider from './Devider';
+import Divider from './Divider';
 
 export default function Content() {
     return (
@@ -11,7 +11,7 @@ export default function Content() {
                     <div>Уровень</div>
                     <div>Наименование работ</div>
                 </div> 
-                <Devider/>
+                <Divider/>
                 <Hierarchy/>
             </div>
         </div>
