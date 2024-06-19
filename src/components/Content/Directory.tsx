@@ -4,52 +4,29 @@ import Divider from './Divider';
 
 interface DirectoryProps {
     name: String;
+    level: number;
+    hasChildren?: boolean;
+    hasParent?: boolean;
+    notLastChild?: boolean;
 }
 
-export default function Directory({name}: DirectoryProps) {
+export default function Directory({
+    name, level, hasChildren, hasParent, notLastChild
+}: DirectoryProps) {
     return (
         <div>
             <div className='directory'>
                 <div className='directory-spacer'>
-                    <div className='directory-icon'>
+                    <div className='directory-icon' style={{marginLeft: level*18+'px'}}>
                         <img src='/icons/file.svg' alt=''/>
-                        <div className='bar'></div>
+                        {hasChildren && <div className='bar'/>}
+                        {hasParent && <div className='bar-left'/>}
+                        {notLastChild && <div className='parent-bar'/>}
                     </div>
                 </div>
                 <div className='directory-name'>{name}</div>
             </div>
             <Divider/>
-            <div className='directory'>
-                <div className='directory-spacer'>
-                    <div className='directory-icon md'>
-                        <img src='/icons/file.svg' alt=''/>
-                        <div className='bar'></div>
-                        <div className='bar-left'></div>
-                    </div>
-                </div>
-                <div className='directory-name'>{name}</div>
-            </div>
-            <Divider/>
-            <div className='directory'>
-                <div className='directory-spacer'>
-                    <div className='directory-icon md2'>
-                        <img src='/icons/file.svg' alt=''/>
-                        <div className='parent-bar'></div>
-                        <div className='bar-left'></div>
-                    </div>
-                </div>
-                <div className='directory-name'>{name}</div>
-            </div>
-            <Divider/>
-            <div className='directory'>
-                <div className='directory-spacer'>
-                    <div className='directory-icon md2'>
-                        <img src='/icons/file.svg' alt=''/>
-                        <div className='bar-left'></div>
-                    </div>
-                </div>
-                <div className='directory-name'>{name}</div>
-            </div>
         </div>
     );
 }
