@@ -1,0 +1,42 @@
+@import "./src/style/colors.scss";
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $dark-grey;
+    height: 44px;
+}
+
+.project-name {
+    color: $grey;
+    font-size: 14px;
+}
+
+.abbreviation {
+    color: $grey;
+    font-size: 10px;
+}
+
+.menu-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 8px 10px 20px;
+    border-right: 1px solid $dark-grey;
+    flex-shrink: 0;
+}
+
+.arrow {
+    cursor: pointer;
+    padding-left: 60px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 18px;
+    padding: 0 15px;
+    border-right: 1px solid $dark-grey;
+    flex-shrink: 0;
+}

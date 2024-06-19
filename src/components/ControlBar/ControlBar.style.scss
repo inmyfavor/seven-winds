@@ -1,0 +1,11 @@
+@import "./src/style/colors.scss";
+
+.panel {
+    padding: 10px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 1px solid $dark-grey;
+    align-items: start;
+}
+

@@ -1,0 +1,25 @@
+@import "./src/style/colors.scss";
+
+%side-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px; 
+    padding: 6px 20px;
+    color: $white;
+    font-size: 14px;
+}
+
+.side-tab {
+    @extend %side-tab;
+}
+
+.side-tab:hover {
+    background-color: $grey;
+    cursor: pointer;
+}
+
+.side-tab-selected {
+    @extend %side-tab;
+    background-color: $grey;
+}

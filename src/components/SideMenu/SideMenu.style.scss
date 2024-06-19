@@ -1,0 +1,10 @@
+@import "./src/style/colors.scss";
+
+.side-menu {
+    width: 233.5px;
+    min-width: 233.5px;
+    height: 100vh;
+    border-right: 1px solid $dark-grey;
+    display: flex;
+    flex-direction: column;
+}

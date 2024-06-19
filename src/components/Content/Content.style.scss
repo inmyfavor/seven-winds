@@ -1,0 +1,20 @@
+@import "./src/style/colors.scss";
+
+.wrapper {
+    background-color: $bg-black;
+    width: 100%;
+}
+
+.content {
+    margin: 0 8px;
+    height: 30px; 
+}
+
+.content-title {
+    display: flex;
+    flex-direction: row;
+    color: $grey;
+    font-size: 14px;
+    padding: 15px 15px;
+    gap: 50px;
+}

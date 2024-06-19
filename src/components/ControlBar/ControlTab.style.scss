@@ -1,0 +1,23 @@
+@import "./src/style/colors.scss";
+
+%tab {
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 13px;
+    cursor: pointer;
+}
+
+.tab {
+    @extend %tab;
+    color: $grey;
+}
+
+.tab:hover {
+    color: $white;
+}
+
+.tab-selected {
+    @extend %tab;
+    color: $white;
+    border-bottom: 1px solid $white;
+}
