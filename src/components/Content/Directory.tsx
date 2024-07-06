@@ -32,15 +32,5 @@ export default function Directory({
             </div>
         </div>
     </div>
-        // <div className='directory'>
-        //     <div className='directory-spacer'>
-        //         <div className='directory-icon'>
-        //             <File />
-        //             {hasChildren && <div className='bar'/>}
-        //             {hasParent && <div className='bar-left'/>}
-        //             {notLastChild && <div className='parent-bar'/>}
-        //         </div>
-        //     </div>
-        // </div>
     );
 }
