@@ -87,21 +87,6 @@ export default function Hierarchy() {
                 })}
             </Column>
             <DataColumn name="Наименование работ" prop="rowName" width="240px" data={flatten}/>
-
-           {/* <Directory name='b' level={0} hasChildren/>
-           <Directory name='b' level={1} hasParent hasChildren/>
-           <Directory name='b' level={2} hasParent notLastChild/>
-           <Directory name='b' level={2} hasParent/> */}
-            {/* <SimpleTreeView defaultExpandedItems={['grid']}>
-                <Directory itemId="grid" label="Data Grid"> */}
-                    {/* <TreeItem itemId="1" label="Item 1" />
-                    <TreeItem itemId="grid-pro" label="@mui/x-data-grid-pro" />
-                    <TreeItem itemId="grid-premium" label="@mui/x-data-grid-premium" /> */}
-                    {/* { directoryName.map((dir: String)=>{<TreeItem label={dir} />}) } */}
-                    {/* <Directory itemId="1" label='fv' />
-                </Directory>
-            </SimpleTreeView> */}
-            {/* <Directory name='frfsvr'/> */}
         </div>
     );
 }
