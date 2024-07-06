@@ -1,6 +1,6 @@
-type HTTPMethod = 'DELETE' | 'GET' | 'POST' | 'PUT';
+export type HTTPMethod = 'DELETE' | 'GET' | 'POST' | 'PUT';
 
-interface TreeResponse {
+export interface TreeResponse {
     child: TreeResponse[];
     equipmentCosts: number;
     estimatedProfit: number;
@@ -16,16 +16,16 @@ interface TreeResponse {
     total: number;
 }
 
-interface RowResponse {
+export interface RowResponse {
 
 }
 
-interface RecalculatedRows {
+export interface RecalculatedRows {
     changed: RowResponse[];
     current: RowResponse;
 }
 
-interface OutlayRowRequest {
+export interface OutlayRowRequest {
     equipmentCosts: number;
     estimatedProfit: number;
     machineOperatorSalary: number;
@@ -33,13 +33,13 @@ interface OutlayRowRequest {
     materials: number;
     mimExploitation: number;
     overheads: number;
-    parentId: number;
+    parentId?: number;
     rowName: string;
     salary: number;
     supportCosts: number;
 }
 
-interface EntityResponse {
+export interface EntityResponse {
     id: number
     rowName: string
 }

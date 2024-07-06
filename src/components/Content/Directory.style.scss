@@ -1,62 +1,120 @@
 @import "./src/style/colors.scss";
 
 .directory {
+    position: relative;
     display: flex;
-    flex-shrink: 0;
-    flex-direction: row;
     align-items: center;
-    margin: 20px 15px;
+    height: 60px;
 }
 
-.directory-spacer {
-    width: 110px;
+.directory-hasParent {
+    margin-left: 19px;
 }
+
+.directory-children {
+    // margin-left: 11px;
+    // border-left: 1px solid white;
+
+    &.hasParent {
+        // margin-left: 24px;
+    }
+}
+
+.directory-content {
+    display: flex;
+    position: relative;
+    // margin-left: 11px;
+    .directory-vertical-line {
+        // width: 0px;
+        position: absolute;
+        left: -8px;
+        height: 100%;
+        border-left: 1px solid #c6c6c6
+    }
+}
+
+// .directory-spacer {
+//     width: 110px;
+// }
 
 .directory-icon {
     position: relative;
+    .bar-left {
+        width: 11px;
+        height: 1px;
+        background-color: #c6c6c6;
+        position: absolute;
+        left: -7px;
+        top: 11px;
+    }
+    .bar-vert-top {
+        width: 1px;
+        height: 29px;
+        background-color: #c6c6c6;
+        position: absolute;
+        left: -8px;
+        top: -17px;
+    }
+    .bar-vert-bottom {
+        width: 1px;
+        height: 32px;
+        background-color: #c6c6c6;
+        position: absolute;
+        left: -8px;
+        top: 12px;
+    }
+    .bar-bottom {
+        width: 1px;
+        height: 23px;
+        background-color: #c6c6c6;
+        position: absolute;
+        left: 11px;
+        top: 20px;
+    }
 }
 
-.directory-icon .bar::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #c6c6c6;
-    left: 11px;
-    top: 20px;
-    width: 1px;
-    height: 61px;
-}
-.directory-icon .bar-left::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #c6c6c6;
-    left: -7px;
-    top: 12px;
-    width: 11px;
-    height: 1px;
-}
+// .directory-icon .bar::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     background-color: #c6c6c6;
+//     left: 11px;
+//     top: 20px;
+//     width: 1px;
+//     height: 46px;
+// }
 
-.directory-icon.md {
-    margin-left: 18px;
-}
+// .directory-icon .bar-left::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     background-color: #c6c6c6;
+//     left: 0px;
+//     top: 12px;
+//     width: 18px;
+//     height: 1px;
+// }
 
-.directory-icon.md2 {
-    margin-left: 36px;
-}
+// .directory-icon.md {
+//     margin-left: 18px;
+// }
 
-.directory-icon .parent-bar::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #c6c6c6;
-    left: -7px;
-    top: 12px;
-    width: 1px;
-    height: 69px;
-}
+// .directory-icon.md2 {
+//     margin-left: 36px;
+// }
 
-.directory-name {
-    color: $white;
-    font-size: 14px;
-}
+// .directory-icon .parent-bar::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     background-color: #c6c6c6;
+//     left: -7px;
+//     top: 12px;
+//     width: 1px;
+//     height: 69px;
+// }
+
+// .directory-name {
+//     color: $white;
+//     font-size: 14px;
+// }

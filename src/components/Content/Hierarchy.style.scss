@@ -1,4 +1,29 @@
 @import "./src/style/colors.scss";
 
 .hierarchy {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0px 15px;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 59px, #414144 60px, #414144 0px);
+    background-position-y: -14px;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+
+        .column-name {
+            color: #A1A1AA;
+            font-size: 14px;
+            padding: 15px 0px;
+        }
+
+        .data {
+            color: #FFFFFF;
+            font-size: 18px;
+            height: 60px;
+            align-items: center;
+            display: flex
+        }
+    }
 }

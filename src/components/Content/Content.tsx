@@ -7,11 +7,11 @@ export default function Content() {
     return (
         <div className='wrapper'>
             <div className='content'>
-                <div className='content-title'>
+                {/* <div className='content-title'>
                     <div>Уровень</div>
                     <div>Наименование работ</div>
                 </div> 
-                <Divider/>
+                <Divider/> */}
                 <Hierarchy/>
             </div>
         </div>
